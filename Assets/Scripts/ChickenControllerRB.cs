@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChickenController : MonoBehaviour
+public class ChickenControllerRB : MonoBehaviour
 {
 
     public float movementSpeed = 3;
