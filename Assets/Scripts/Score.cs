@@ -3,6 +3,7 @@
  * Scoring system that has a difficulty level and max difficulty.
  * Keeps track of score and increases difficulty (movement speed) based on score.
  * Rate at which score increases is increased at each difficulty level
+ * Saves high score if there is one and displays on menu screen.
  */
 
 using System.Collections;
@@ -54,6 +55,8 @@ public class Score : MonoBehaviour
     public void OnDeath()
     {
         isDead = true;
+        if(PlayerPrefs.GetFloat("Highscore") < score)
+            PlayerPrefs.SetFloat("Highscore", score);
         deathMenu.ToggleDeathMenu(score);
     }
 }

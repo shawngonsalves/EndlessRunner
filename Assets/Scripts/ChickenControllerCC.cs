@@ -80,7 +80,7 @@ public class ChickenControllerCC : MonoBehaviour
     // is called everytime Jeff collides with something
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-        if (hit.point.z > transform.position.z + controller.radius)
+        if (hit.gameObject.tag == "Enemy")
             Death();
     }
 
