@@ -67,6 +67,8 @@ public class ChickenControllerCC : MonoBehaviour
         movement.y = verticalVelocity; // Y - apply any gravity that has been calculated
         movement.z = movementSpeed; // Z - make Jeff move forward at a constant speed
         controller.Move(movement * Time.deltaTime); // move Jeff accordingly
+        // adds a slight rotation in direction of movement
+        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
     }
 
     // modifies speed based on difficulty level
