@@ -44,7 +44,6 @@ public class DeathMenu : MonoBehaviour
 
     public void ToMenu()
     {
-        // TODO: implement once we have working menu
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene(0);
     }
 }
