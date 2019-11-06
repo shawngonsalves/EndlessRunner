@@ -18,9 +18,6 @@ public class CameraFollow : MonoBehaviour
     private float transition;
     private float animationDuration; // how long intro animation lasts
 
-    AudioSource fxSound;
-    public AudioClip backMusic;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -29,9 +26,6 @@ public class CameraFollow : MonoBehaviour
         animationDuration = 2.0f;
         lookAt = GameObject.FindGameObjectWithTag("Player").transform;
         offset = transform.position - lookAt.position;
-
-        fxSound = GetComponent<AudioSource>();
-        fxSound.Play();
     }
 
     // Update is called once per frame

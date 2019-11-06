@@ -3,7 +3,7 @@
  * Player movement for Jeff using a Character Controller and simulates gravity
  * Movement for Jeff now is left and right
  * Includes function for updating difficulty (speed) and checking for death
- * TODO: Add jumping, sound and make Jeff turn slightly towards direction of movement
+ * TODO: Add jumping and sound effects
  */
 
 using System.Collections;
@@ -24,6 +24,10 @@ public class ChickenControllerCC : MonoBehaviour
 
     private CharacterController controller;
     private Animator anim;
+
+    AudioSource fxSound;
+    public AudioClip backMusic;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +39,9 @@ public class ChickenControllerCC : MonoBehaviour
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         startTime = Time.time;
+
+        fxSound = GetComponent<AudioSource>();
+        StartCoroutine(AudioController.FadeIn(fxSound, 3.5f)); // fade in background song
     }
 
     // Update is called once per frame
@@ -88,6 +95,7 @@ public class ChickenControllerCC : MonoBehaviour
 
     private void Death()
     {
+        StartCoroutine(AudioController.FadeOut(fxSound, 0.5f)); // fade out background song
         isDead = true;
         GetComponent<Score>().OnDeath();
     }
