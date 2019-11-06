@@ -1147,7 +1147,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1835421552
 GameObject:
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   tilePrefabs:
   - {fileID: 2846839141426748633, guid: ae4b4a4a5ad2cc341808c602dcbf3652, type: 3}
   - {fileID: 7745939943561577001, guid: 8ee0932eaad0ef5449f3da2181c963f7, type: 3}
-  - {fileID: 5647795629541800629, guid: d56d42c1e9ac86f408acdcef6dbfdd74, type: 3}
+  - {fileID: 6493043970979762381, guid: 8667a6e48ba17a945a344f80f3c3e0c8, type: 3}
   - {fileID: 4171139868467419568, guid: 05cfe480e0ba8214ea739cc628c212fc, type: 3}
   - {fileID: 7779192715518139145, guid: 58620eace729c9e4a9c9e1a9860ab06c, type: 3}
   - {fileID: 6652602159738011879, guid: 71f94971efe2cea4ebbdc90bd1615841, type: 3}
@@ -1381,7 +1381,7 @@ PrefabInstance:
     - target: {fileID: 7523756773068274741, guid: 9aed9d8c0ec434b4a9da4f566216a85f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7523756773068274741, guid: 9aed9d8c0ec434b4a9da4f566216a85f,
         type: 3}
