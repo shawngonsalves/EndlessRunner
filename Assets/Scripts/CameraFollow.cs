@@ -21,7 +21,7 @@ public class CameraFollow : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        animOffset = new Vector3(0, 5, 5);
+        animOffset = new Vector3(0, 4, 4);
         transition = 0.0f;
         animationDuration = 2.0f;
         lookAt = GameObject.FindGameObjectWithTag("Player").transform;

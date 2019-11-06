@@ -6,6 +6,11 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    public Text highscoreText;
+    void Start()
+    {
+        highscoreText.text = "Highscore: " + ((int)PlayerPrefs.GetFloat("Highscore")).ToString(); 
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
