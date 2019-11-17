@@ -27,7 +27,7 @@ public class ChickenControllerCC : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
 
-    AudioSource fxSound;
+    AudioSource bgMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -42,8 +42,8 @@ public class ChickenControllerCC : MonoBehaviour
         anim = GetComponent<Animator>();
         startTime = Time.time;
 
-        fxSound = GetComponent<AudioSource>();
-        StartCoroutine(AudioController.FadeIn(fxSound, 3.5f)); // fade in background song
+        bgMusic = GetComponent<AudioSource>();
+        StartCoroutine(AudioController.FadeIn(bgMusic, 3.5f)); // fade in background song
     }
 
     // Update is called once per frame
@@ -65,7 +65,6 @@ public class ChickenControllerCC : MonoBehaviour
         }
 
         movement = Vector3.zero; // reset movement Vector after every frame
-        Debug.Log(controller.isGrounded);
         if (controller.isGrounded)
         {
             verticalVelocity -= gravity * Time.deltaTime;// makes sure Jeff is really on the ground
@@ -112,7 +111,7 @@ public class ChickenControllerCC : MonoBehaviour
 
     private void Death()
     {
-        StartCoroutine(AudioController.FadeOut(fxSound, 0.5f)); // fade out background song
+        StartCoroutine(AudioController.FadeOut(bgMusic, 0.5f)); // fade out background song
         isDead = true;
         GetComponent<Score>().OnDeath();
     }
