@@ -20,13 +20,14 @@ public class ChickenControllerCC : MonoBehaviour
     private float startTime; // fixes bug that causes camera movement after a restart
     private bool isDead;
 
+    private float jumpSpeed;
+
     private Vector3 movement;
 
     private CharacterController controller;
     private Animator anim;
 
     AudioSource fxSound;
-    public AudioClip backMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,7 @@ public class ChickenControllerCC : MonoBehaviour
         verticalVelocity = 0.0f;
         gravity = 9.8f;
         movementSpeed = baseSpeed;
+        jumpSpeed = 6.0f;
         controller = GetComponent<CharacterController>();
         anim = GetComponent<Animator>();
         startTime = Time.time;
@@ -63,10 +65,16 @@ public class ChickenControllerCC : MonoBehaviour
         }
 
         movement = Vector3.zero; // reset movement Vector after every frame
-
-        // calculate gravity for when we add jumping
-        if(controller.isGrounded)
-            verticalVelocity = -0.3f; // makes sure Jeff is really on the ground
+        Debug.Log(controller.isGrounded);
+        if (controller.isGrounded)
+        {
+            verticalVelocity -= gravity * Time.deltaTime;// makes sure Jeff is really on the ground
+            if (Input.GetButton("Jump"))
+            {
+                verticalVelocity = jumpSpeed;
+                anim.SetTrigger("jump");
+            }
+        }
         else
             verticalVelocity -= gravity * Time.deltaTime;
 
@@ -74,8 +82,17 @@ public class ChickenControllerCC : MonoBehaviour
         movement.y = verticalVelocity; // Y - apply any gravity that has been calculated
         movement.z = movementSpeed; // Z - make Jeff move forward at a constant speed
         controller.Move(movement * Time.deltaTime); // move Jeff accordingly
-        // adds a slight rotation in direction of movement
-        transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
+
+        // adds rotation in direction of movement
+        // if Jeff is on the ground, then cancel out the gravity before rotating
+        if(controller.isGrounded)
+        {
+            movement.y = 0;
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
+        }
+        // else make the rotation downward less severe
+        else
+            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.05f);
     }
 
     // modifies speed based on difficulty level
