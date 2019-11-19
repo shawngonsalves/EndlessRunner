@@ -23,6 +23,7 @@ public class MainMenu : MonoBehaviour
         highscoreText.text = "Highscore: " + ((int)PlayerPrefs.GetFloat("Highscore")).ToString();
     }
 
+    // Loads level 1 and fades out menu music
     public void PlayGame()
     {
         StartCoroutine(AudioController.FadeOut(bgMusic, 0.75f)); // fade out background song
@@ -45,6 +46,8 @@ public class MainMenu : MonoBehaviour
         levelSelect.SetActive(false);
     }
 
+    // Uses a string to select appropriate Scene
+    // FadesOut menu music
     public void Select(string levelName)
     {
         StartCoroutine(AudioController.FadeOut(bgMusic, 0.75f)); // fade out background song

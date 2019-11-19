@@ -21,12 +21,14 @@ public class ChickenControllerCC : MonoBehaviour
     private bool isDead;
 
     private float jumpSpeed;
+    private bool isJumping = false;
 
     private Vector3 movement;
 
     private CharacterController controller;
     private Animator anim;
 
+    public CameraFollow cameraAudio;
     AudioSource bgMusic;
 
     // Start is called before the first frame update
@@ -42,7 +44,7 @@ public class ChickenControllerCC : MonoBehaviour
         anim = GetComponent<Animator>();
         startTime = Time.time;
 
-        bgMusic = GetComponent<AudioSource>();
+        bgMusic = cameraAudio.GetComponent<AudioSource>();
         StartCoroutine(AudioController.FadeIn(bgMusic, 3.5f)); // fade in background song
     }
 
@@ -68,10 +70,12 @@ public class ChickenControllerCC : MonoBehaviour
         if (controller.isGrounded)
         {
             verticalVelocity -= gravity * Time.deltaTime;// makes sure Jeff is really on the ground
-            if (Input.GetButton("Jump"))
+            if (Input.GetButton("Jump") && !isJumping)
             {
+                isJumping = true;
                 verticalVelocity = jumpSpeed;
                 anim.SetTrigger("jump");
+                Invoke("resetisJumping", 1.6f);
             }
         }
         else
@@ -84,14 +88,21 @@ public class ChickenControllerCC : MonoBehaviour
 
         // adds rotation in direction of movement
         // if Jeff is on the ground, then cancel out the gravity before rotating
-        if(controller.isGrounded)
+        // only if the game is not paused
+        if(controller.isGrounded && !PauseMenu.isPaused)
         {
             movement.y = 0;
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
         }
-        // else make the rotation downward less severe
-        else
+        // else make the rotation downward after a jump less severe if the game is not paused
+        else if(!PauseMenu.isPaused)
             transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.05f);
+    }
+
+    // this function is called a certain amount of time after a jump is performed
+    private void resetisJumping()
+    {
+        isJumping = false;
     }
 
     // modifies speed based on difficulty level
