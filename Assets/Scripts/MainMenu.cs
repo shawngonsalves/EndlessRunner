@@ -20,7 +20,8 @@ public class MainMenu : MonoBehaviour
         // Always set to Main menu, not level select
         currentstate = MenuStates.Main;
         bgMusic = GetComponent<AudioSource>();
-        highscoreText.text = "Highscore: " + ((int)PlayerPrefs.GetFloat("Highscore")).ToString();
+        // Highscore text will be removed off of main menu and placed in level select
+        highscoreText.text = "Highscore: " + ((int)PlayerPrefs.GetFloat("HighscoreLevel1")).ToString();
     }
 
     // Loads level 1 and fades out menu music
