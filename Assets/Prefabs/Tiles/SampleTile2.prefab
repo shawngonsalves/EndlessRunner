@@ -157,7 +157,7 @@ Transform:
   - {fileID: 5830756377336404280}
   - {fileID: 1008229655814788714}
   - {fileID: 306790687}
-  - {fileID: 1518699358328742060}
+  - {fileID: 2501692597891236736}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -347,7 +347,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 14
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1001 &957472596181464416
+--- !u!1001 &4246311072041358924
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -357,7 +357,7 @@ PrefabInstance:
     - target: {fileID: 5278613057104001123, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
         type: 3}
       propertyPath: m_Name
-      value: egg
+      value: eggScript
       objectReference: {fileID: 0}
     - target: {fileID: 1754751588345140684, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
         type: 3}
@@ -421,9 +421,9 @@ PrefabInstance:
       objectReference: {fileID: 306790686}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a, type: 3}
---- !u!4 &1518699358328742060 stripped
+--- !u!4 &2501692597891236736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1754751588345140684, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
     type: 3}
-  m_PrefabInstance: {fileID: 957472596181464416}
+  m_PrefabInstance: {fileID: 4246311072041358924}
   m_PrefabAsset: {fileID: 0}
