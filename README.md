@@ -17,7 +17,7 @@
     **IMPORTANT - make sure that there is a tile prefab without any obstacles on it.  Place this tile on "Element 0" in the array.  This way Jeff won't initially spawn into obstacles.**\
    \
    A Note on Eggs:\
-   (1) When adding an egg to a scene, make sure its y position is set above at least 0.5 so that the float mechanic works correctly.\
+   (1) When adding an egg to a scene, make sure its y position is set above at least 0.5 so that the float mechanic works correctly.  Use the eggScript prefab.\
    (2) After the egg has been added, copy the collectSound object from SampleTile2 and place it as a child of the empty game object for the tile you're making.\
    (3) Drag the collectSound object onto the empty slot for the EggBounce script.\
    (4) Only ONE collectSound object needs to be on a tile.  Each egg must have this collectSound object added to it.
