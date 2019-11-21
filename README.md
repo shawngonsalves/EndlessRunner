@@ -14,5 +14,12 @@
  (8) Any objects/obstacles added to the path MUST be added as a child to the path itself NOT the Empty Game Object. (Refer to SampleTile3 in Prefabs/Tiles folder).  Make sure to tag any objects that you want Jeff to die on as "Enemy". DO NOT tag the entire path or Empty Game Object, just tag the individual obstacles.\
  (9) When you are finished, drag the Empty Game Object to the Prefab/Tiles folder to save it as a prefab.\
  (10) Click on the TileManager object in the heirarchy view.  Under its script, there should be a dropdown for an array called "Tile Prefabs".  Change its size based on how many prefabs you have created.  Drag and drop each prefab from the Prefabs/Tiles folder onto each element of this array.\
-    **IMPORTANT - make sure that there is a tile prefab without any obstacles on it.  Place this tile on "Element 0" in the array.  This way Jeff won't initially spawn into obstacles.**
+    **IMPORTANT - make sure that there is a tile prefab without any obstacles on it.  Place this tile on "Element 0" in the array.  This way Jeff won't initially spawn into obstacles.**\
+   \
+   A Note on Eggs:\
+   (1) When adding an egg to a scene, make sure its y position is set above at least 0.5 so that the float mechanic works correctly.\
+   (2) After the egg has been added, copy the collectSound object from SampleTile2 and place it as a child of the empty game object for the tile you're making.\
+   (3) Drag the collectSound object onto the empty slot for the EggBounce script.\
+   (4) Only ONE collectSound object needs to be on a tile.  Each egg must have this collectSound object added to it.
+   
      
