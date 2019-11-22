@@ -13,7 +13,7 @@ using UnityEngine;
 public class ChickenControllerCC : MonoBehaviour
 {
     private float movementSpeed;
-    private float baseSpeed = 5.0f; // changes base speed of Jeff
+    private float baseSpeed = 7.0f; // changes base speed of Jeff
     private float verticalVelocity;
     private float gravity;
     private float animationDuration;
