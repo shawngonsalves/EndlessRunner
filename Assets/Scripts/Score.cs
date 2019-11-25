@@ -34,7 +34,7 @@ public class Score : MonoBehaviour
         eggs = 0;
         difficultyLevel = 1;
         maxDifficultyLevel = 6;
-        scoreToNextLevel = 18;
+        scoreToNextLevel = 15;
         currentScene = SceneManager.GetActiveScene();
     }
 

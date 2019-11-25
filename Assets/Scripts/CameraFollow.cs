@@ -34,7 +34,7 @@ public class CameraFollow : MonoBehaviour
         movement = lookAt.position + offset;
         movement.x = 0; // X - make sure camera is always centered on track, not Jeff
         // Y - in case we add inclines or jumping to our game, this makes the camera follow Jeff on Y axis
-        movement.y = Mathf.Clamp(movement.y, 3, 5);
+        movement.y = Mathf.Clamp(movement.y, 3, 8);
 
         // if we have completed the animation, move normally
         if(transition > 1.0f)
