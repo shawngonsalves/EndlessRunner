@@ -941,7 +941,7 @@ PrefabInstance:
     - target: {fileID: 145950500425873316, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
       propertyPath: m_FontData.m_FontSize
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2e8e4b76a5899741a1062f6be27b852, type: 3}
