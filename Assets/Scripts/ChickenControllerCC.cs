@@ -28,8 +28,9 @@ public class ChickenControllerCC : MonoBehaviour
     private CharacterController controller;
     private Animator anim;
 
-    public CameraFollow cameraAudio;
-    AudioSource bgMusic;
+    public AudioSource bgMusic;
+    public AudioSource bgEffect;
+    AudioSource jump;
 
     // Start is called before the first frame update
     void Start()
@@ -42,8 +43,9 @@ public class ChickenControllerCC : MonoBehaviour
         anim = GetComponent<Animator>();
         startTime = Time.time;
 
-        bgMusic = cameraAudio.GetComponent<AudioSource>();
+        jump = GetComponent<AudioSource>();
         StartCoroutine(AudioController.FadeIn(bgMusic, 3.5f)); // fade in background song
+        StartCoroutine(AudioController.FadeIn(bgEffect, 3.5f)); // fade in background sound
     }
 
     // Update is called once per frame
@@ -73,6 +75,7 @@ public class ChickenControllerCC : MonoBehaviour
                 isJumping = true;
                 verticalVelocity = jumpSpeed;
                 anim.SetTrigger("jump");
+                jump.Play();
                 Invoke("resetisJumping", 1.6f);
             }
         }
@@ -121,6 +124,7 @@ public class ChickenControllerCC : MonoBehaviour
     private void Death()
     {
         StartCoroutine(AudioController.FadeOut(bgMusic, 0.5f)); // fade out background song
+        StartCoroutine(AudioController.FadeOut(bgEffect, 0.5f)); // fade out background sound effect
         isDead = true;
         GetComponent<Score>().OnDeath();
     }
