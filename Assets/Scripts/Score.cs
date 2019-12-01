@@ -55,7 +55,10 @@ public class Score : MonoBehaviour
         if (difficultyLevel == maxDifficultyLevel)
             return;
         scoreToNextLevel *= 2;
-        GetComponent<ChickenControllerCC>().SetSpeed(difficultyLevel);
+        if(currentScene.name == "Level3")
+            GetComponent<ChickenControllerSpace>().SetSpeed(difficultyLevel);
+        else
+            GetComponent<ChickenControllerCC>().SetSpeed(difficultyLevel);
         difficultyLevel++;
     }
 

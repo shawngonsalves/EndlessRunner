@@ -10,7 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ChickenControllerCC : MonoBehaviour
+public class ChickenControllerSpace : MonoBehaviour
 {
     private float movementSpeed;
     public float baseSpeed = 7.0f; // changes base speed of Jeff
@@ -20,17 +20,15 @@ public class ChickenControllerCC : MonoBehaviour
     private float startTime; // fixes bug that causes camera movement after a restart
     private bool isDead;
 
-    public float jumpSpeed;
-    private bool isJumping = false;
-
     private Vector3 movement;
 
     private CharacterController controller;
     private Animator anim;
 
-    public AudioSource bgMusic;
-    public AudioSource bgEffect;
-    AudioSource jump;
+    public ParticleSystem LeftPropel, RightPropel;
+
+    public CameraFollow cameraAudio;
+    AudioSource bgMusic;
 
     // Start is called before the first frame update
     void Start()
@@ -43,9 +41,8 @@ public class ChickenControllerCC : MonoBehaviour
         anim = GetComponent<Animator>();
         startTime = Time.time;
 
-        jump = GetComponent<AudioSource>();
+        bgMusic = cameraAudio.GetComponent<AudioSource>();
         StartCoroutine(AudioController.FadeIn(bgMusic, 3.5f)); // fade in background song
-        StartCoroutine(AudioController.FadeIn(bgEffect, 3.5f)); // fade in background sound
     }
 
     // Update is called once per frame
@@ -53,10 +50,8 @@ public class ChickenControllerCC : MonoBehaviour
     {
         if (isDead)
         {
-            anim.SetInteger("Walk", 0);
             return;
         }
-        anim.SetInteger("Walk", 1); // animate Jeff to walk
 
         // if our animation is playing
         if (Time.time - startTime < animationDuration)
@@ -67,43 +62,32 @@ public class ChickenControllerCC : MonoBehaviour
         }
 
         movement = Vector3.zero; // reset movement Vector after every frame
-        if (controller.isGrounded)
-        {
-            verticalVelocity -= gravity * Time.deltaTime;// makes sure Jeff is really on the ground
-            if (Input.GetButton("Jump") && !isJumping)
-            {
-                isJumping = true;
-                verticalVelocity = jumpSpeed;
-                anim.SetTrigger("jump");
-                jump.Play();
-                Invoke("resetisJumping", 1.6f);
-            }
-        }
-        else
-            verticalVelocity -= gravity * Time.deltaTime;
+        verticalVelocity -= gravity * Time.deltaTime;
 
-        movement.x = Input.GetAxisRaw("Horizontal") * movementSpeed;// X - left and right movement
+        if (Input.GetKey(KeyCode.Q))
+        {
+            transform.Rotate(Vector3.forward * movementSpeed * 20 * Time.deltaTime);
+            RightPropel.Play();
+        }
+        else if (Input.GetKey(KeyCode.A))
+            RightPropel.Play();
+        else if (RightPropel.isPlaying)
+            RightPropel.Stop();
+
+        if (Input.GetKey(KeyCode.E))
+        {
+            transform.Rotate(-Vector3.forward * movementSpeed * 20 * Time.deltaTime);
+            LeftPropel.Play();
+        }
+        else if (Input.GetKey(KeyCode.D))
+            LeftPropel.Play();
+        else if (LeftPropel.isPlaying)
+            LeftPropel.Stop();
+        movement.x = Input.GetAxisRaw("Horizontal") * (movementSpeed / 2);// X - left and right movement
         movement.y = verticalVelocity; // Y - apply any gravity that has been calculated
         movement.z = movementSpeed; // Z - make Jeff move forward at a constant speed
         controller.Move(movement * Time.deltaTime); // move Jeff accordingly
-
-        // adds rotation in direction of movement
-        // if Jeff is on the ground, then cancel out the gravity before rotating
-        // only if the game is not paused
-        if(controller.isGrounded && !PauseMenu.isPaused)
-        {
-            movement.y = 0;
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15f);
-        }
-        // else make the rotation downward after a jump less severe if the game is not paused
-        else if(!PauseMenu.isPaused)
-            transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.05f);
-    }
-
-    // this function is called a certain amount of time after a jump is performed
-    private void resetisJumping()
-    {
-        isJumping = false;
+        //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.10f);
     }
 
     // modifies speed based on difficulty level
@@ -124,7 +108,6 @@ public class ChickenControllerCC : MonoBehaviour
     private void Death()
     {
         StartCoroutine(AudioController.FadeOut(bgMusic, 0.5f)); // fade out background song
-        StartCoroutine(AudioController.FadeOut(bgEffect, 0.5f)); // fade out background sound effect
         isDead = true;
         GetComponent<Score>().OnDeath();
     }

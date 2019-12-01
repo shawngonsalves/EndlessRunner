@@ -6,16 +6,9 @@ using UnityEngine;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
-    public CameraFollow cameraMusic;
-    private AudioSource bgmusic;
+    public AudioSource bgmusic;
+    public AudioSource bgEffect;
     public static bool isPaused;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // need to access background music in every scene
-        bgmusic = cameraMusic.GetComponent<AudioSource>();
-    }
 
     // Update is called once per frame
     void Update()
@@ -33,6 +26,7 @@ public class PauseMenu : MonoBehaviour
                 pauseMenu.SetActive(true);
                 Time.timeScale = 0f;
                 bgmusic.Pause();
+                bgEffect.Pause();
             }
         }
     }
@@ -44,6 +38,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         bgmusic.Play();
+        bgEffect.Play();
     }
 
     // unpauses game and returns to main menu
