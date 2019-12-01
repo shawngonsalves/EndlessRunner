@@ -163,6 +163,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePrefabs:
   - {fileID: 9019194039821200928, guid: 3176e6cdda7cbaa439b3eaf51703b90c, type: 3}
+  - {fileID: 6345968300111647422, guid: b7ad4b539c7fedc499ef5d47766aec6e, type: 3}
+  - {fileID: 3782967225827217477, guid: 22cb218f09484c04bbc312c6313a839e, type: 3}
+  - {fileID: 6091593852517916869, guid: 5a7c152b9c684ad4f88b1877e9bd2522, type: 3}
 --- !u!4 &590919569
 Transform:
   m_ObjectHideFlags: 0
@@ -549,7 +552,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &145950500003531170
 PrefabInstance:
@@ -676,12 +679,12 @@ PrefabInstance:
     - target: {fileID: 145950500185908114, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 12.1
+      value: 12.099976
       objectReference: {fileID: 0}
     - target: {fileID: 145950500185908114, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -7.8
+      value: -7.799988
       objectReference: {fileID: 0}
     - target: {fileID: 145950500180340245, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
@@ -783,7 +786,7 @@ PrefabInstance:
     - target: {fileID: 6469327928863353484, guid: 9aed9d8c0ec434b4a9da4f566216a85f,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6469327928863353484, guid: 9aed9d8c0ec434b4a9da4f566216a85f,
         type: 3}
