@@ -808,6 +808,16 @@ PrefabInstance:
       propertyPath: cameraAudio
       value: 
       objectReference: {fileID: 1264061511}
+    - target: {fileID: 6469327928863353483, guid: 9aed9d8c0ec434b4a9da4f566216a85f,
+        type: 3}
+      propertyPath: gravity
+      value: 9.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6469327928863353483, guid: 9aed9d8c0ec434b4a9da4f566216a85f,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6469327928863353480, guid: 9aed9d8c0ec434b4a9da4f566216a85f,
         type: 3}
       propertyPath: scoreText
