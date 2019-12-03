@@ -885,26 +885,6 @@ PrefabInstance:
       propertyPath: bgEffect
       value: 
       objectReference: {fileID: 1264061513}
-    - target: {fileID: 145950500185908114, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 12.099976
-      objectReference: {fileID: 0}
-    - target: {fileID: 145950500185908114, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -7.799988
-      objectReference: {fileID: 0}
-    - target: {fileID: 145950500180340245, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 145950500281164969, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 145950500206968772, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
       propertyPath: m_FontData.m_Font
@@ -942,6 +922,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 145950500185908114, guid: d2e8e4b76a5899741a1062f6be27b852,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 12.099976
+      objectReference: {fileID: 0}
+    - target: {fileID: 145950500185908114, guid: d2e8e4b76a5899741a1062f6be27b852,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -7.799988
+      objectReference: {fileID: 0}
+    - target: {fileID: 145950500180340245, guid: d2e8e4b76a5899741a1062f6be27b852,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 145950500281164969, guid: d2e8e4b76a5899741a1062f6be27b852,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2e8e4b76a5899741a1062f6be27b852, type: 3}
