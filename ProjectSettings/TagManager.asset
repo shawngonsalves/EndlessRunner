@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Music
+  - Egg
   layers:
   - Default
   - TransparentFX

@@ -25,10 +25,10 @@ public class TileManager : MonoBehaviour
     void Start()
     {
         activeTiles = new List<GameObject>();
-        tilesOnScreen = 7;
-        tileLength = 10.0f;
-        spawnZ = -10.0f;
-        safeZone = 20.0f;
+        tilesOnScreen = 10;
+        tileLength = 30.0f;
+        spawnZ = -30.0f;
+        safeZone = 60.0f;
         lastPrefabIndex = 0;
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         
