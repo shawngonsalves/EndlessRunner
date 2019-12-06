@@ -7654,6 +7654,7 @@ GameObject:
   - component: {fileID: 9141279303186682030}
   - component: {fileID: 3365056606809907377}
   - component: {fileID: 3275387381541040536}
+  - component: {fileID: 2076071821704512238}
   m_Layer: 0
   m_Name: SM_Veh_Pickup_01
   m_TagString: Enemy
@@ -7727,6 +7728,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2076071821704512238
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8305981338139730144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: 9badcac488342344aa2e3c5292f8b1e6, type: 3}
 --- !u!1 &8367915447362502942
 GameObject:
   m_ObjectHideFlags: 0
