@@ -300,9 +300,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: afd7166432fae4448bce13bee80c9d75, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 008068f233b39244a9e5af2a537c261b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.296
+  m_Volume: 0.33
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -880,6 +880,16 @@ PrefabInstance:
       propertyPath: bgEffect
       value: 
       objectReference: {fileID: 1264061513}
+    - target: {fileID: 145950500180340245, guid: d2e8e4b76a5899741a1062f6be27b852,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 145950500281164969, guid: d2e8e4b76a5899741a1062f6be27b852,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 145950500206968772, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
       propertyPath: m_FontData.m_FontSize
@@ -917,16 +927,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 35
-      objectReference: {fileID: 0}
-    - target: {fileID: 145950500180340245, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 145950500281164969, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d2e8e4b76a5899741a1062f6be27b852, type: 3}
