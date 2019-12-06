@@ -79,6 +79,6 @@ public class Score : MonoBehaviour
 
     public static void addEggToScore()
     {
-        score += 10;
+        score += 5;
     }
 }
