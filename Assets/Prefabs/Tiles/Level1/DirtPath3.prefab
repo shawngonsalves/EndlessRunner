@@ -2344,6 +2344,7 @@ GameObject:
   - component: {fileID: 5824229853629716629}
   - component: {fileID: 3181291591087107831}
   - component: {fileID: 262105058617301112}
+  - component: {fileID: 8725497631249168701}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02 (7)
   m_TagString: Enemy
@@ -2411,6 +2412,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8725497631249168701
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329888765275708495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &1337562103006825333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5541,6 +5556,7 @@ GameObject:
   - component: {fileID: 6235866300571367843}
   - component: {fileID: 7106178372556666185}
   - component: {fileID: 7005936443134575670}
+  - component: {fileID: 6220863225561900088}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02 (1)
   m_TagString: Enemy
@@ -5608,6 +5624,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &6220863225561900088
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096965850221601111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &4402790687961894716
 GameObject:
   m_ObjectHideFlags: 0
@@ -9048,6 +9078,7 @@ GameObject:
   - component: {fileID: 3206907777326429548}
   - component: {fileID: 185737568941092760}
   - component: {fileID: 2289171445729608204}
+  - component: {fileID: 8293612573144858891}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02
   m_TagString: Enemy
@@ -9115,6 +9146,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8293612573144858891
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7102689622885740153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &7182289300497936016
 GameObject:
   m_ObjectHideFlags: 0
@@ -10922,6 +10967,7 @@ GameObject:
   - component: {fileID: 8072282881721097809}
   - component: {fileID: 5020754499051541923}
   - component: {fileID: 6971511990107443751}
+  - component: {fileID: 2270235201820940396}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02 (5)
   m_TagString: Enemy
@@ -10989,6 +11035,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2270235201820940396
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252143397021205950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &8504200991497548161
 GameObject:
   m_ObjectHideFlags: 0
