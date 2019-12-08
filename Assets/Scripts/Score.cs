@@ -18,7 +18,7 @@ public class Score : MonoBehaviour
     public Text eggText;
 
     public static float score;
-    public static int eggs;
+    public static int eggs, eggsToAdd;
     private int difficultyLevel;
     private int maxDifficultyLevel;
     private int scoreToNextLevel;
@@ -32,10 +32,13 @@ public class Score : MonoBehaviour
         isDead = false;
         score = 0.0f;
         eggs = 0;
+        eggsToAdd = 0;
         difficultyLevel = 1;
         maxDifficultyLevel = 6;
         scoreToNextLevel = 15;
         currentScene = SceneManager.GetActiveScene();
+        // used to reset my egg count for testing the level unlock
+        //PlayerPrefs.SetInt("NumEggs", eggsToAdd);
     }
 
     // Update is called once per frame
@@ -68,13 +71,14 @@ public class Score : MonoBehaviour
         if(PlayerPrefs.GetFloat("Highscore" + currentScene.name) < score)
             PlayerPrefs.SetFloat("Highscore" + currentScene.name, score);
 
-        if (PlayerPrefs.GetInt("MaxEggs" + currentScene.name) < eggs)
-            PlayerPrefs.SetInt("MaxEggs" + currentScene.name, eggs);
+        eggsToAdd = PlayerPrefs.GetInt("NumEggs");
+        eggsToAdd += eggs;
+        PlayerPrefs.SetInt("NumEggs", eggsToAdd);
         deathMenu.ToggleDeathMenu(score);
     }
 
     public static void addEggToScore()
     {
-        score += 10;
+        score += 5;
     }
 }

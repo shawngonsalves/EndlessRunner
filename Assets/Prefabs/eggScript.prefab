@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3441064168808591916}
   - component: {fileID: 3319345417980655310}
   m_Layer: 0
-  m_Name: egg 1
+  m_Name: eggScript
   m_TagString: Egg
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,7 +92,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.5, y: 1, z: 1.5}
   m_Center: {x: 0, y: 0.29552677, z: 0}
 --- !u!114 &3319345417980655310
 MonoBehaviour:

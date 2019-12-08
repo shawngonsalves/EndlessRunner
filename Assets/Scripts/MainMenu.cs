@@ -6,7 +6,6 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public Text highscoreText;
     AudioSource bgMusic;
 
     // menu states
@@ -20,8 +19,8 @@ public class MainMenu : MonoBehaviour
         // Always set to Main menu, not level select
         currentstate = MenuStates.Main;
         bgMusic = GetComponent<AudioSource>();
-        // Highscore text will be removed off of main menu and placed in level select
-        highscoreText.text = "Highscore: " + ((int)PlayerPrefs.GetFloat("HighscoreLevel1")).ToString();
+        // place high scores on level select screen now
+        // refer to LevelUnlock.cs script
     }
 
     // Loads level 1 and fades out menu music

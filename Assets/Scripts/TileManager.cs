@@ -35,7 +35,7 @@ public class TileManager : MonoBehaviour
         // spawn initial tiles based on how many are allowed to be on screen
         for(int i = 0; i < tilesOnScreen; i++)
         {
-            if (i < 3)
+            if (i < 2)
                 SpawnTile(0);
             else
                 SpawnTile();

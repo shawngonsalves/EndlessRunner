@@ -166,6 +166,10 @@ MonoBehaviour:
   - {fileID: 6345968300111647422, guid: b7ad4b539c7fedc499ef5d47766aec6e, type: 3}
   - {fileID: 3782967225827217477, guid: 22cb218f09484c04bbc312c6313a839e, type: 3}
   - {fileID: 6091593852517916869, guid: 5a7c152b9c684ad4f88b1877e9bd2522, type: 3}
+  - {fileID: 5549756110171939174, guid: 37e80e84130f2f94283c395cd6932b83, type: 3}
+  - {fileID: 1838145866314920911, guid: fdd71972df7be764482fe04727763285, type: 3}
+  - {fileID: 981674644651966586, guid: a140576db50e0df41bb10c7aced26e34, type: 3}
+  - {fileID: 186439347286965962, guid: 40f02679a126b5b4da8ebff1220af384, type: 3}
 --- !u!4 &590919569
 Transform:
   m_ObjectHideFlags: 0
@@ -300,9 +304,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: afd7166432fae4448bce13bee80c9d75, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 008068f233b39244a9e5af2a537c261b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.296
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -872,11 +876,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 145950498657008074, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
-      propertyPath: cameraMusic
-      value: 
-      objectReference: {fileID: 1264061511}
-    - target: {fileID: 145950498657008074, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
       propertyPath: bgmusic
       value: 
       objectReference: {fileID: 1264061512}
@@ -885,16 +884,6 @@ PrefabInstance:
       propertyPath: bgEffect
       value: 
       objectReference: {fileID: 1264061513}
-    - target: {fileID: 145950500185908114, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 12.099976
-      objectReference: {fileID: 0}
-    - target: {fileID: 145950500185908114, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -7.799988
-      objectReference: {fileID: 0}
     - target: {fileID: 145950500180340245, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
       propertyPath: m_IsActive
@@ -907,12 +896,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 145950500206968772, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
-      propertyPath: m_FontData.m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644,
-        type: 3}
-    - target: {fileID: 145950500206968772, guid: d2e8e4b76a5899741a1062f6be27b852,
-        type: 3}
       propertyPath: m_FontData.m_FontSize
       value: 70
       objectReference: {fileID: 0}
@@ -921,17 +904,23 @@ PrefabInstance:
       propertyPath: m_FontData.m_MaxSize
       value: 70
       objectReference: {fileID: 0}
-    - target: {fileID: 145950499063928939, guid: d2e8e4b76a5899741a1062f6be27b852,
+    - target: {fileID: 145950500206968772, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
-      propertyPath: m_FontData.m_FontSize
-      value: 30
-      objectReference: {fileID: 0}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644,
+        type: 3}
     - target: {fileID: 145950499063928939, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644,
         type: 3}
+    - target: {fileID: 145950499063928939, guid: d2e8e4b76a5899741a1062f6be27b852,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 145950500425873316, guid: d2e8e4b76a5899741a1062f6be27b852,
         type: 3}
       propertyPath: m_FontData.m_Font
