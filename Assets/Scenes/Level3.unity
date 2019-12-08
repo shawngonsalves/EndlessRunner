@@ -14,10 +14,10 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.01
+  m_FogDensity: 0.005
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -5106,7 +5106,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tilePrefabs:
+  - {fileID: 1317197349542887901, guid: 2625b5f9b9e53eb428e2da1b0972b78b, type: 3}
   - {fileID: 7180646462232966232, guid: f3ba6823ce5673546aa23e7ddc0e71bb, type: 3}
+  - {fileID: 7274961085857636133, guid: a92346c3ccdfb08409f8b833e69f654d, type: 3}
+  - {fileID: 1772326750258107393, guid: 9d60074f692e6154497d2aa4092f3ef6, type: 3}
+  - {fileID: 5257817480021953102, guid: 07b966c1dcb9d4a4d8f56da44007316f, type: 3}
+  - {fileID: 5267596740401859189, guid: c85e4b35eece6f4478f310074649693e, type: 3}
+  - {fileID: 4677939349104900422, guid: e2f054bc4cd8a344f8ebd2c17cb3d4bc, type: 3}
+  - {fileID: 3093137046426023014, guid: 6726e6247655b304a88d518e0b56456a, type: 3}
 --- !u!4 &430796863
 Transform:
   m_ObjectHideFlags: 0
@@ -5454,7 +5461,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdaa2287b71cae14baf1cfb3f34a6560, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseSpeed: 7
+  baseSpeed: 8
   gravity: 0
   LeftPropel: {fileID: 187495778}
   RightPropel: {fileID: 1998125892}
@@ -10297,7 +10304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1982779210}
   m_LocalRotation: {x: 0.043619405, y: 0, z: 0, w: 0.9990483}
-  m_LocalPosition: {x: 0, y: 3, z: -4.5}
+  m_LocalPosition: {x: 0, y: 4, z: -6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
