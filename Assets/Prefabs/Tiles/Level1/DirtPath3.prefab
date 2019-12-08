@@ -2344,6 +2344,7 @@ GameObject:
   - component: {fileID: 5824229853629716629}
   - component: {fileID: 3181291591087107831}
   - component: {fileID: 262105058617301112}
+  - component: {fileID: 885782936391437292}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02 (7)
   m_TagString: Enemy
@@ -2411,6 +2412,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &885782936391437292
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329888765275708495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &1337562103006825333
 GameObject:
   m_ObjectHideFlags: 0
@@ -5668,6 +5683,7 @@ GameObject:
   - component: {fileID: 6235866300571367843}
   - component: {fileID: 7106178372556666185}
   - component: {fileID: 7005936443134575670}
+  - component: {fileID: 2511675963075679294}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02 (1)
   m_TagString: Enemy
@@ -5735,6 +5751,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &2511675963075679294
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4096965850221601111}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &4402790687961894716
 GameObject:
   m_ObjectHideFlags: 0
@@ -7538,6 +7568,7 @@ GameObject:
   - component: {fileID: 1257619848375489510}
   - component: {fileID: 3156148961334569257}
   - component: {fileID: 3195634527285457701}
+  - component: {fileID: 8193609514824800618}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02 (2)
   m_TagString: Enemy
@@ -7605,6 +7636,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8193609514824800618
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6059446319518934415}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &6063174718142232992
 GameObject:
   m_ObjectHideFlags: 0
@@ -9178,6 +9223,7 @@ GameObject:
   - component: {fileID: 3206907777326429548}
   - component: {fileID: 185737568941092760}
   - component: {fileID: 2289171445729608204}
+  - component: {fileID: 8851399868267123835}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02
   m_TagString: Enemy
@@ -9245,6 +9291,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &8851399868267123835
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7102689622885740153}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &7182289300497936016
 GameObject:
   m_ObjectHideFlags: 0
@@ -11052,6 +11112,7 @@ GameObject:
   - component: {fileID: 8072282881721097809}
   - component: {fileID: 5020754499051541923}
   - component: {fileID: 6971511990107443751}
+  - component: {fileID: 3028373127110189057}
   m_Layer: 0
   m_Name: SM_Prop_Hay_Bale_Square_02 (5)
   m_TagString: Enemy
@@ -11119,6 +11180,20 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!64 &3028373127110189057
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8252143397021205950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_Mesh: {fileID: 4300000, guid: a57197537d2756648910e1dcd0f81cc6, type: 3}
 --- !u!1 &8504200991497548161
 GameObject:
   m_ObjectHideFlags: 0
@@ -12137,11 +12212,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2452252743413069755}
     m_Modifications:
-    - target: {fileID: 5278613057104001123, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
-        type: 3}
-      propertyPath: m_Name
-      value: eggScript
-      objectReference: {fileID: 0}
     - target: {fileID: 1754751588345140684, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12197,6 +12267,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5278613057104001123, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
+        type: 3}
+      propertyPath: m_Name
+      value: eggScript
+      objectReference: {fileID: 0}
     - target: {fileID: 3319345417980655310, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
         type: 3}
       propertyPath: collectSound
@@ -12217,11 +12292,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2452252743413069755}
     m_Modifications:
-    - target: {fileID: 5278613057104001123, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
-        type: 3}
-      propertyPath: m_Name
-      value: eggScript (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 1754751588345140684, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12276,6 +12346,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5278613057104001123, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
+        type: 3}
+      propertyPath: m_Name
+      value: eggScript (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3319345417980655310, guid: 8011aa3c3c3efb9489990aaf5ea4dc3a,
         type: 3}
