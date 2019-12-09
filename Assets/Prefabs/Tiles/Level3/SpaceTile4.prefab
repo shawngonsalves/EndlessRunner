@@ -524,7 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cce0860d592a17942b61732d49f40f0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  degreesPerSecond: 2
+  degreesPerSecond: 3
   amplitude: 0
   frequency: 0.2
 --- !u!1001 &59429927896208810
